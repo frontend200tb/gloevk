@@ -1,19 +1,31 @@
+/*
+1. Global
+2. Header
+3. Main
+4. Footer
+*/
+
+
+/* 1. Global */
 body {
-  min-width: 550px;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  min-width: 550px;
+
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
 .container {
-  width: 510px;
-  padding: 0 20px;
   margin: 0 auto;
+  padding: 0 20px;
+  width: 510px;
 }
 
-.site-header {
+
+/* 2. Header */
+.header {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -21,12 +33,14 @@ body {
   margin: 10px 0;
 }
 
+
+/* 3. Main */
 .intro-container {
+  margin: 0 auto 20px;
+  padding: 15px 0 0;
   width: 510px;
   min-height: 150px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding: 15px 0 0;
+
   box-sizing: border-box;
   background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
@@ -34,9 +48,10 @@ body {
 }
 
 .title {
-  width: 240px;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  width: 240px;
+
   font-family: "Georgia", "Times", serif;
   font-size: 28px;
   line-height: 36px;
@@ -59,9 +74,10 @@ body {
 }
 
 .intro p {
-  width: 210px;
   margin: 8px 0 10px;
   padding: 0;
+  width: 210px;
+
   line-height: 20px;
 }
 
@@ -72,20 +88,23 @@ body {
 
 .products-list {
   display: flex;
-  padding: 14px 0 0;
   margin: 0 0 0 -20px;
+  padding: 14px 0 0;
+
   list-style: none;
 }
 
 .product-card {
-  position: relative;
-  width: 132px;
   margin-bottom: 20px;
   margin-left: 20px;
   padding: 124px 12px 0;
+  width: 132px;
+
   font-family: "Georgia", "Times", serif;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  position: relative;
 }
 
 .product-card-new {
@@ -94,18 +113,20 @@ body {
 }
 
 .product-card-new::after {
-  position: absolute;
-  content: "new";
   width: 158px;
   height: 35px;
-  top: 0;
-  right: 0;
+
+  content: "new";
   font-size: 16px;
   font-weight: 700;
   line-height: 35px;
   color: #ffffff;
   text-align: center;
   background-color: #ff8a00;
+
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .product-card img {
@@ -117,6 +138,7 @@ body {
 .product-card h3 {
   margin: 0 0 2px 0;
   padding: 0;
+
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
@@ -125,6 +147,7 @@ body {
 .product-card p {
   margin: 0 0 8px 0;
   padding: 0;
+
   font-size: 13px;
   font-style: italic;
   line-height: 16px;
@@ -132,6 +155,7 @@ body {
 
 .product-card .price {
   margin-top: auto;
+
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 15px;
@@ -141,25 +165,29 @@ body {
 
 .price del {
   margin-right: 2px;
+
   font-weight: 400;
   font-size: 13px;
   color: #000000;
   text-decoration: line-through;
 }
 
-.site-footer {
+
+/* 4. Footer */
+.footer {
   background-color: #847462;
 }
 
-.site-footer .container {
+.footer__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
 }
 
-.ivan a {
-  color: #ffffff;
+.copyright a {
   padding: 0 10px 10px 0;
+
+  color: #ffffff;
   text-decoration: none;
 }
